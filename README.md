@@ -32,4 +32,4 @@ npm run preview
 
 ## 发布
 
-仓库的 Pages 发布源使用 GitHub Actions。推送至 `main` 或手动运行 Deploy celestial archive 会执行类型检查、构建并部署。Vite 的相对资源路径支持仓库子路径。
+推送至 `main` 或在该分支手动运行 Deploy celestial archive，会执行类型检查与构建。工作流将验证过的静态文件同步至 `gh-pages`，再请求 GitHub Pages 从该分支根目录发布。Vite 的相对资源路径支持仓库子路径。
